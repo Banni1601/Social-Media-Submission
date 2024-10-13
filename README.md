@@ -2,8 +2,8 @@
 
 # WEBSITE LINK: #
 # API's #:
-# API for Users Data: 
-# API for post the User Data: 
+# API for Users Data: https://social-media-submission.vercel.app/api/usersdata 
+# API for post the User Data: https://social-media-submission.vercel.app/api/addUser 
 
 Created a system that allows users to submit their name, social media handle, and upload multiple images. The submitted data will be displayed on an admin dashboard, showing each user's name, social media handle, and all images they have uploaded.
 
