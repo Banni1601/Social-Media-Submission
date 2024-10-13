@@ -32,16 +32,7 @@ const userSchema = new mongoose.Schema({
 // Create a User model
 const User = mongoose.model('User', userSchema);
 
-/* Setup multer for image uploads
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, 'uploads/'); // Directory for storing uploaded images
-  },
-  filename: (req, file, cb) => {
-    cb(null, Date.now() + '-' + file.originalname);
-  },
-});
-const upload = multer({ storage });*/
+
 
 // POST endpoint to submit user data
 app.post('/api/addUser', async (req, res) => {
@@ -59,11 +50,24 @@ app.post('/api/addUser', async (req, res) => {
   }
 });
 
+// GET API for Check the Server is working or not
+app.get('/', async (req, res) => {
+  try {
+    
+    res.send('Express Server is Working...');
+  } catch (error) {
+    console.error('Error fetching users:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+}); 
+
+
 // GET endpoint to fetch user data
 app.get('/api/usersdata', async (req, res) => {
   try {
     const users = await User.find(); // Fetch all users
     res.json(users);
+    //res.send(users);
   } catch (error) {
     console.error('Error fetching users:', error);
     res.status(500).json({ error: 'Internal Server Error' });
