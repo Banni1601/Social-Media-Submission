@@ -19,5 +19,3 @@ Name
 Social media handle
 Uploaded images (render the images as thumbnails or clickable links).
 Ensure that the dashboard updates dynamically when new submissions are made.
-
-Social Media Task Screen: Screen 1, Screen 2
