@@ -78,13 +78,14 @@ h2{
     
   }
   .image-gallery{
-    max-height:20vh;
+    max-height:15vh;
     overflow:auto;
-    
+   
   }
 
   .thumbnail {
     max-width: 90px;
+    height: 15vh;
   }
 }
 
@@ -104,10 +105,12 @@ h2{
   .image-gallery{
     max-height:25vh;
     overflow:auto;
+   
   }
 
   .thumbnail {
     max-width: 120px;
+    height: 20vh;
   }
 }
 
@@ -136,6 +139,8 @@ h2{
   }
   .thumbnail {
     max-width: 140px;
+    max-height: 22vh;
+    
   }
 }
 

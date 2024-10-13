@@ -10,7 +10,7 @@ const AdminDashboard = (trigger) => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/usersdata");
+        const response = await axios.get("https://social-media-submission.vercel.app/api/usersdata");
         const userData = response.data;
 
         if (userData.length === 0) {
