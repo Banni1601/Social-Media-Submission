@@ -50,7 +50,7 @@ const UserForm = () => {
 
     try {
       d.images = arr;
-      const response = await axios.post('https://social-media-submission.vercel.app/api/addUser', d);
+      const response = await axios.post('https://social-media-submission-hbwc.vercel.app/api/addUser', d);
       if (response.status === 201) {
         setMessage('User successfully added!');
         setShowMessage(true);
